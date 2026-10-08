@@ -1,9 +1,19 @@
-// Edit contact details here once; main.js fills them into every page.
 window.SITE = {
   name: "Charekh Valley",
-  phone: "+91 00000 00000",          // TODO: real number
-  whatsapp: "910000000000",          // country code + number, no + or spaces
-  email: "info@charekhvalley.com",   // TODO: confirm
-  formEndpoint: "",                  // e.g. Formspree URL. Empty = enquiry opens WhatsApp
+
+  // Phone number displayed on the website
+  phone: "+91 99719 00065",
+
+  // WhatsApp number
+  // Country code + number, without "+" or spaces
+  whatsapp: "919971900065",
+
+  // Email address
+  email: "vivek.kumar1284@gmail.com",
+
+  // Leave empty to use WhatsApp for enquiries
+  formEndpoint: "",
+
+  // Project address
   address: "Near Katyuri Resort, Uttarakhand"
 };
