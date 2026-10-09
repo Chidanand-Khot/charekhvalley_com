@@ -3,14 +3,157 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amenities | Charekh Valley, Katyuri Resort, Uttarakhand</title>
-<meta name="description" content="Amenities at Charekh Valley: access to Katyuri Resort, planned internal roads, green spaces, security and utilities for plot owners in Uttarakhand."[cite: 2]>
+<title>Amenities & Plot Features | Charekh Valley, Katyuri Resort, Uttarakhand</title>
+<meta name="description" content="Explore premium plot amenities at Charekh Valley, Uttarakhand: resort access, gated infrastructure, mountain views, and serene forest surroundings.">
 <link rel="canonical" href="https://www.charekhvalley.com/amenities.html">
 <link rel="icon" href="assets/images/charekh-valley-logo-removebg-preview.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+  :root {
+    --primary-deep: #08120e;
+    --primary-forest: #0f1c14;
+    --primary-green: #15291f;
+    --luxury-gold: #c5a059;
+    --luxury-gold-light: #e6c587;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2c3e35;
+    background-color: #faf9f6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .serif-font {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  /* Cinematic Mist & Float Animations */
+  @keyframes valleyMist {
+    0% { transform: translateX(-5%) scale(1); opacity: 0.4; }
+    50% { transform: translateX(5%) scale(1.05); opacity: 0.7; }
+    100% { transform: translateX(-5%) scale(1); opacity: 0.4; }
+  }
+
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* Hero Banner */
+  .page-hero {
+    position: relative;
+    background: radial-gradient(circle at top right, #1b3827, #0f1c14 60%, #08120e 100%) !important;
+    overflow: hidden;
+    padding: 130px 0;
+  }
+  .page-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    right: -10%;
+    height: 150px;
+    background: linear-gradient(to top, rgba(250, 249, 246, 0.25), transparent);
+    filter: blur(12px);
+    animation: valleyMist 12s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  /* Animated Luxury Cards */
+  .amenity-card {
+    background: #ffffff;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 18px;
+    padding: 35px 30px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 30px rgba(15, 28, 20, 0.04);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .amenity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--luxury-gold);
+    transition: height 0.4s ease;
+  }
+
+  .amenity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(197, 160, 89, 0.2);
+    border-color: var(--luxury-gold);
+  }
+
+  .amenity-card:hover::before {
+    height: 100%;
+  }
+
+  .amenity-icon-box {
+    width: 70px;
+    height: 70px;
+    background: rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--luxury-gold);
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+    transition: all 0.5s ease;
+    animation: floatSlow 5s ease-in-out infinite;
+  }
+
+  .amenity-card:hover .amenity-icon-box {
+    background: var(--luxury-gold);
+    color: #0f1c14;
+    transform: rotateY(360deg) scale(1.05);
+  }
+
+  .section-title .sub-title {
+    color: var(--luxury-gold);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .bg-cream {
+    background-color: #f3f1ec;
+  }
+
+  .bg-green-valley {
+    background: linear-gradient(135deg, #0f1c14, #15291f);
+    border-top: 1px solid rgba(197, 160, 89, 0.25);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+  }
+
+  .badge-nature-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(197, 160, 89, 0.12);
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    color: var(--luxury-gold-light);
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+</style>
 </head>
 <body>
 
@@ -20,7 +163,7 @@
     <div class="header-navigation">
       <div class="primary-menu">
         <div class="site-branding">
-          <a class="brand-logo" href="index.html"><img src="assets/images/charekh-valley-logo.jpeg"alt="Charekh Valley"></a>
+          <a class="brand-logo" href="index.html"><img src="assets/images/charekh-valley-logo.jpeg" alt="Charekh Valley"></a>
         </div>
         <div class="nav-menu theme-nav-menu">
           <div class="navbar-close"><i class="fa-solid fa-xmark"></i></div>
@@ -30,7 +173,7 @@
               <li><a href="overview.html">Overview</a></li>
               <li><a href="master-plan.html">Master Plan</a></li>
               <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="amenities.html" style="color:#b8934f">Amenities</a></li>
+              <li><a href="amenities.html" style="color:#c5a059">Amenities</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -47,175 +190,218 @@
 </header>
 
 <!-- ===== PAGE BANNER ===== -->
-<section class="page-hero bg_cover py-5 text-white" style="background: linear-gradient(rgba(8, 28, 21, 0.85), rgba(8, 28, 21, 0.85)), url('assets/images/hero.jpg') center/cover no-repeat;">
-  <div class="container py-4">
+<section class="page-hero text-white">
+  <div class="container py-4 position-relative" style="z-index: 3;">
     <div class="page-content text-center">
-      <h1 class="text-white display-4 fw-bold">Amenities</h1>
-      <ul class="list-unstyled d-flex justify-content-center gap-2 mb-0">
+      <span class="badge-nature-hero mb-3"><i class="fa-solid fa-mountain-sun"></i> Uttarakhand Hills & Valleys</span>
+      <h1 class="text-white display-3 fw-bold serif-font mb-3">Plot Amenities & Lifestyle</h1>
+      <ul class="list-unstyled d-flex justify-content-center gap-2 mb-0 opacity-75">
         <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-        <li class="text-white-50">/ Amenities</li>
+        <li>/</li>
+        <li class="text-warning">Amenities</li>
       </ul>
     </div>
   </div>
 </section>
 
 <main>
-<!-- TODO: replace every item with the confirmed amenities list from the client[cite: 2] -->
-<section class="section-padding">
-  <div class="container">
-    <div class="section-title mb-5">
-      <span class="sub-title">Amenities</span>
-      <h2>Resort Living</h2>
-      <p>Your neighbour is a working resort.</p>[cite: 2]
+
+<!-- ===== RESORT LIVING & EXCLUSIVE PRIVILEGES ===== -->
+<section class="section-padding py-5">
+  <div class="container py-4">
+    <div class="section-title text-center mb-5">
+      <span class="sub-title">Resort Neighbor Advantage</span>
+      <h2 class="display-5 serif-font fw-bold">Unmatched Hospitality & Leisure</h2>
+      <p class="text-muted mx-auto" style="max-width: 650px;">Your private plot sits directly alongside a fully operational luxury resort, blending independent hill real estate ownership with five-star hospitality privileges.</p>
     </div>
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-hotel"></i></div>
-          <div class="content"><h4 class="title h5">Katyuri Resort Access</h4><p class="text-muted mb-0">Stay, dine and unwind next door.</p></div>[cite: 2]
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-hotel"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Katyuri Resort Access</h4>
+            <p class="text-muted mb-0">Enjoy immediate access to upscale dining, guest hospitality, and leisure zones steps from your custom plot.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-bell-concierge"></i></div>
-          <div class="content"><h4 class="title h5">Hospitality Services</h4><p class="text-muted mb-0">Housekeeping and guest services through the resort.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-bell-concierge"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Resort Hospitality Services</h4>
+            <p class="text-muted mb-0">Avail professional concierge assistance, housekeeping support, and estate management through resort operations.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-champagne-glasses"></i></div>
-          <div class="content"><h4 class="title h5">Events and Gatherings</h4><p class="text-muted mb-0">Space for family occasions and get-togethers.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Private Events & Gatherings</h4>
+            <p class="text-muted mb-0">Host unforgettable family celebrations, milestones, and weekend get-togethers in designated resort spaces.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-key"></i></div>
-          <div class="content"><h4 class="title h5">Lease Option</h4><p class="text-muted mb-0">Discuss placing your built unit into resort operations.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-key"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Lucrative Lease-Back Options</h4>
+            <p class="text-muted mb-0">Seamlessly integrate your built villa or holiday chalet into resort rental programs for reliable passive income.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-padding bg-cream">
-  <div class="container">
-    <div class="section-title mb-5">
-      <span class="sub-title">Amenities</span>
-      <h2>Project Infrastructure</h2>
-      <p>The groundwork for building with confidence.</p>[cite: 2]
+<!-- ===== PLOT INFRASTRUCTURE ===== -->
+<section class="section-padding bg-cream py-5">
+  <div class="container py-4">
+    <div class="section-title text-center mb-5">
+      <span class="sub-title">Secure Land Investment</span>
+      <h2 class="display-5 serif-font fw-bold">Ready-to-Build Plot Infrastructure</h2>
+      <p class="text-muted mx-auto" style="max-width: 650px;">Every plot is professionally planned with robust core utilities so you can begin architectural construction on your dream mountain home without delay.</p>
     </div>
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-road"></i></div>
-          <div class="content"><h4 class="title h5">Internal Roads</h4><p class="text-muted mb-0">Planned access to every plot.</p></div>[cite: 2]
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-road"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">All-Weather Internal Roads</h4>
+            <p class="text-muted mb-0">Wide, meticulously paved internal access pathways connecting seamlessly from main highways directly to your plot boundary.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-faucet-drip"></i></div>
-          <div class="content"><h4 class="title h5">Water Supply</h4><p class="text-muted mb-0">Planned water provision for each plot.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-faucet-drip"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Dedicated Water Provision</h4>
+            <p class="text-muted mb-0">Robust underground water lines and supply lines provisioned specifically for each plot layout.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-bolt"></i></div>
-          <div class="content"><h4 class="title h5">Power Connection</h4><p class="text-muted mb-0">Electricity planning across the layout.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Reliable Power Grid</h4>
+            <p class="text-muted mb-0">Dependable electrical grid wiring and infrastructure laid out across the entirety of the gated community.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-shield-halved"></i></div>
-          <div class="content"><h4 class="title h5">Security and Entry</h4><p class="text-muted mb-0">Managed access and upkeep.</p></div>[cite: 2]
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-padding">
-  <div class="container">
-    <div class="section-title mb-5">
-      <span class="sub-title">Amenities</span>
-      <h2>Nature and Outdoors</h2>
-      <p>The reason people come to the hills.</p>[cite: 2]
-    </div>
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-tree"></i></div>
-          <div class="content"><h4 class="title h5">Green Spaces</h4><p class="text-muted mb-0">Open, landscaped areas through the project.</p></div>[cite: 2]
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-mountain"></i></div>
-          <div class="content"><h4 class="title h5">Mountain Views</h4><p class="text-muted mb-0">Plots positioned for valley outlooks.</p></div>[cite: 2]
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-person-walking"></i></div>
-          <div class="content"><h4 class="title h5">Walking Paths</h4><p class="text-muted mb-0">Quiet routes through the surroundings.</p></div>[cite: 2]
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="renvia-iconic-left-box style-three p-4 border rounded bg-white shadow-sm h-100 d-flex gap-3 align-items-start">
-          <div class="icon fs-3 text-primary"><i class="fa-solid fa-wind"></i></div>
-          <div class="content"><h4 class="title h5">Clean Air and Calm</h4><p class="text-muted mb-0">Away from city noise, close to the resort.</p></div>[cite: 2]
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">24/7 Gated Security & Upkeep</h4>
+            <p class="text-muted mb-0">Secure gated perimeter entrance, round-the-clock monitoring, and ongoing professional community maintenance.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section-padding bg-green text-white text-center">
-  <div class="container">
-    <h2 class="mb-3 text-white">See Which Plots Are Closest to What Matters to You</h2>
-    <p class="mb-4 text-white-50">Amenities are subject to the final project plan. Please confirm availability with our team.</p>[cite: 2]
+<!-- ===== NATURE & OUTDOORS ===== -->
+<section class="section-padding py-5">
+  <div class="container py-4">
+    <div class="section-title text-center mb-5">
+      <span class="sub-title">Immersive Uttarakhand Scenery</span>
+      <h2 class="display-5 serif-font fw-bold">Pristine Nature & Outdoors</h2>
+      <p class="text-muted mx-auto" style="max-width: 650px;">Designed for buyers seeking sanctuary in nature, surrounded by thick pine canopies, clean mountain air, and panoramic valley drops.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-tree"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Preserved Green Open Spaces</h4>
+            <p class="text-muted mb-0">Carefully retained natural topography, lush gardens, and landscaped pockets preserving the pristine forest ecosystem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-mountain"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Unobstructed Mountain Panoramas</h4>
+            <p class="text-muted mb-0">Terraced plot orientation guaranteeing breathtaking, permanent viewpoints of misty valleys and rolling hills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-person-walking"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Scenic Walking & Hiking Trails</h4>
+            <p class="text-muted mb-0">Private pathways winding through pine groves and morning fog for peaceful morning strolls and nature walks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="amenity-card d-flex gap-4 align-items-start">
+          <div class="amenity-icon-box flex-shrink-0"><i class="fa-solid fa-wind"></i></div>
+          <div>
+            <h4 class="title h5 serif-font fw-bold mb-2">Pure Mountain Oxygen & Serenity</h4>
+            <p class="text-muted mb-0">An undisturbed atmosphere far from city chaos, offering absolute quietude and unpolluted crisp mountain air.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="section-padding bg-green-valley text-white text-center py-5">
+  <div class="container py-4">
+    <h2 class="mb-3 text-white serif-font display-6 fw-bold">Secure Your Private Estate Above the Mist</h2>
+    <p class="mb-4 text-white-50 mx-auto" style="max-width: 600px;">Plot allocations and premium valley-view locations are currently open. Contact our property advisors for complete catalog and pricing details.</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap">
-      <a class="theme-btn style-one" href="master-plan.html">View Master Plan</a>[cite: 2]
-      <a class="theme-btn style-two" href="contact.html">Enquire Now</a>[cite: 2]
+      <a class="theme-btn style-one" href="master-plan.html">View Master Plan</a>
+      <a class="theme-btn style-two bg-warning text-dark border-warning" href="contact.html">Enquire Now</a>
     </div>
   </div>
 </section>
+
 </main>
 
 <!-- ===== FOOTER ===== -->
-<footer class="main-footer footer-v3 bg-dark text-white pt-5 pb-3">
+<footer class="main-footer footer-v3 bg-dark text-white pt-5 pb-3 border-top border-secondary border-opacity-25">
   <div class="container">
-    <div class="row">
+    <div class="row g-4">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="footer-widget">
           <div class="footer-logo mb-3"><img src="assets/images/charekh-valley-logo.jpeg" alt="Charekh Valley" style="max-width:150px; border-radius: 4px;"></div>
-          <div class="widget-content"><p class="text-white-50">Premium plotted project inside Katyuri Resort, Uttarakhand.</p></div>[cite: 2]
+          <div class="widget-content"><p class="text-white-50 small">Premium plotted project inside Katyuri Resort, Uttarakhand.</p></div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="footer-widget">
-          <h4 class="widget-title text-white h5">Quick Links</h4>
+          <h4 class="widget-title text-white h5 serif-font">Quick Links</h4>
           <div class="line-wrap mb-3"><span></span><span></span><span></span></div>
           <div class="widget-content">
             <ul class="widget-nav list-unstyled">
               <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
-              <li class="mb-2"><a href="overview.html" class="text-white-50 text-decoration-none">Overview</a>[cite: 2]</li>
-              <li class="mb-2"><a href="master-plan.html" class="text-white-50 text-decoration-none">Master Plan</a>[cite: 2]</li>
-              <li class="mb-2"><a href="amenities.html" class="text-white-50 text-decoration-none">Amenities</a>[cite: 2]</li>
-              <li class="mb-2"><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a>[cite: 2]</li>
-              <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>[cite: 2]</li>
+              <li class="mb-2"><a href="overview.html" class="text-white-50 text-decoration-none">Overview</a></li>
+              <li class="mb-2"><a href="master-plan.html" class="text-white-50 text-decoration-none">Master Plan</a></li>
+              <li class="mb-2"><a href="amenities.html" class="text-white-50 text-decoration-none">Amenities</a></li>
+              <li class="mb-2"><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+              <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="footer-widget">
-          <h4 class="widget-title text-white h5">Contact</h4>
+          <h4 class="widget-title text-white h5 serif-font">Contact</h4>
           <div class="line-wrap mb-3"><span></span><span></span><span></span></div>
           <div class="widget-content">
             <ul class="widget-nav list-unstyled text-white-50">
-              <li class="mb-2"><i class="fa-solid fa-phone me-2"></i> <a data-site="phone-link" href="#" class="text-white-50 text-decoration-none">phone</a></li>[cite: 2]
-              <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a data-site="email-link" href="#" class="text-white-50 text-decoration-none">email</a></li>[cite: 2]
-              <li><i class="fa-solid fa-location-dot me-2"></i> <span data-site="address">Near Katyuri Resort, Uttarakhand</span></li>[cite: 2]
+              <li class="mb-2"><i class="fa-solid fa-phone me-2 text-warning"></i> <a data-site="phone-link" href="#" class="text-white-50 text-decoration-none">phone</a></li>
+              <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-warning"></i> <a data-site="email-link" href="#" class="text-white-50 text-decoration-none">email</a></li>
+              <li><i class="fa-solid fa-location-dot me-2 text-warning"></i> <span data-site="address">Near Katyuri Resort, Uttarakhand</span></li>
             </ul>
           </div>
         </div>
@@ -223,15 +409,15 @@
     </div>
     <hr class="border-secondary my-4">
     <div class="copyright-area text-center text-white-50 small">
-      <p>&copy; 2026 Charekh Valley. Images and plans are indicative.[cite: 2] 
+      <p>&copy; 2026 Charekh Valley. Images and plans are indicative. 
         <a href="blog/" class="text-white-50 text-decoration-none">Blog</a> | 
         <a href="privacy-policy/" class="text-white-50 text-decoration-none">Privacy Policy</a> | 
-        <a href="terms-and-conditions/" class="text-white-50 text-decoration-none">Terms and Conditions</a></p>[cite: 2]
+        <a href="terms-and-conditions/" class="text-white-50 text-decoration-none">Terms and Conditions</a></p>
     </div>
   </div>
 </footer>
 
-<a class="theme-btn style-one wa-float" data-site="wa-link" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>[cite: 2]
+<a class="theme-btn style-one wa-float" data-site="wa-link" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
 
 <script src="assets/js/site-config.js"></script>
 <script src="assets/js/main.js"></script>
