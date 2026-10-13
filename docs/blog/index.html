@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charekh Valley Blog | Insights on Hill Plots, Real Estate & Mountain Living</title>
+<meta name="description" content="Explore articles, guides, and expert insights on investing in hill station plots, building eco-friendly mountain homes, pricing, and resort integration in Uttarakhand.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.charekhvalley.com/blog/">
+<link rel="icon" href="../assets/images/charekh-valley-logo-removebg-preview.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Charekh Valley">
+<meta property="og:title" content="Charekh Valley Blog | Insights on Hill Plots, Real Estate & Mountain Living">
+<meta property="og:description" content="Explore articles, guides, and expert insights on investing in hill station plots, building eco-friendly mountain homes, pricing, and resort integration in Uttarakhand.">
+<meta property="og:url" content="https://www.charekhvalley.com/blog/">
+<meta property="og:image" content="https://www.charekhvalley.com/assets/images/charekh-valley-plots-new.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts & Frameworks -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- Schema Markup: BreadcrumbList -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://www.charekhvalley.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Blog",
+   "item": "https://www.charekhvalley.com/blog/"
+  }
+ ]
+}
+</script>
+
+<style>
+  :root {
+    --primary-deep: #08120e;
+    --primary-forest: #0f1c14;
+    --primary-green: #15291f;
+    --luxury-gold: #c5a059;
+    --luxury-gold-light: #e6c587;
+    --cv-sage-bg: #F4F7F4;
+    --cv-card-shadow: 0 15px 35px rgba(15, 28, 20, 0.06);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2c3e35;
+    background-color: #faf9f6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .serif-font {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  /* Blog Index Hero */
+  .blog-index-hero {
+    padding: 140px 0 80px 0;
+    background: radial-gradient(circle at top right, #1b3827, #0f1c14 60%, #08120e 100%);
+    color: #fff;
+    position: relative;
+  }
+
+  .badge-blog {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(197, 160, 89, 0.12);
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    color: var(--luxury-gold-light);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  /* Blog Card Architecture */
+  .blog-card {
+    background: #ffffff;
+    border: 1px solid rgba(197, 160, 89, 0.18);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--cv-card-shadow);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  .blog-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--luxury-gold);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(197, 160, 89, 0.18);
+    border-color: var(--luxury-gold);
+  }
+
+  .blog-card:hover::after {
+    opacity: 1;
+  }
+
+  .blog-card-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .blog-card:hover .blog-card-img {
+    transform: scale(1.05);
+  }
+
+  .blog-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .blog-meta {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .blog-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--primary-forest);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .blog-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .blog-title a:hover {
+    color: var(--luxury-gold);
+  }
+
+  .blog-excerpt {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .read-more-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-forest);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+  }
+
+  .read-more-link:hover {
+    color: var(--luxury-gold);
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER (PRESERVED FROM TEMPLATE) ===== -->
+<header class="header-area header-one transparent-header">
+  <div class="container-fluid">
+    <div class="header-navigation">
+      <div class="primary-menu">
+        <div class="site-branding">
+          <a class="brand-logo" href="../index.html"><img src="../assets/images/charekh-valley-logo.jpeg" alt="Charekh Valley"></a>
+        </div>
+        <div class="nav-menu theme-nav-menu">
+          <div class="navbar-close"><i class="fa-solid fa-xmark"></i></div>
+          <nav class="main-menu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../overview.html">Overview</a></li>
+              <li><a href="../master-plan.html">Master Plan</a></li>
+              <li><a href="../pricing.html">Pricing</a></li>
+              <li><a href="../amenities.html">Amenities</a></li>
+              <li><a href="../location.html">Location</a></li>
+              <li><a href="../gallery.html">Gallery</a></li>
+              <li><a href="index.html" style="color:#c5a059">Blog</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-right-item">
+          <a class="theme-btn style-one d-none d-xl-inline-flex" href="../contact.html">Enquire Now</a>
+          <button class="navbar-toggler" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="blog-index-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <span class="badge-blog"><i class="fa-solid fa-newspaper"></i> Expert Guides &amp; Insights</span>
+        <h1 class="display-4 fw-bold mb-3 serif-font" style="color: #fff;">Charekh Valley Knowledge Hub</h1>
+        <p class="lead text-light opacity-85 mb-0" style="font-weight: 300;">Explore our complete library of articles on hill station land investment, sustainable mountain home construction, pricing guides, and resort leasing opportunities in Uttarakhand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG CARDS GRID SECTION ===== -->
+<section class="py-5" style="background-color: #faf9f6;">
+  <div class="container py-4">
+    <div class="row g-4">
+
+      <!-- Blog 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-01.jpg" alt="Best Hill Station Plots in Charekh" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="best-hill-station-plots-in-charekh.html">Best Hill Station Plots in Charekh, Uttarakhand</a></h3>
+            <p class="blog-excerpt">Discover why Charekh offers the ultimate hill station plot experience with breathtaking valley views and modern gated amenities.</p>
+            <a href="best-hill-station-plots-in-charekh.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-view.jpg" alt="Best Valley Plots in Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="best-valley-plots-in-uttarakhand.html">Best Valley Plots in Uttarakhand: Your Ultimate Selection Guide</a></h3>
+            <p class="blog-excerpt">A comprehensive review of what makes valley plots in Uttarakhand superior for second homes and long-term land banking.</p>
+            <a href="best-valley-plots-in-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-02.jpg" alt="Build Holiday Home in Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 10 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="build-holiday-home-uttarakhand.html">How to Build Your Dream Holiday Home in Uttarakhand</a></h3>
+            <p class="blog-excerpt">Step-by-step guidance on architectural design, local approvals, material selection, and building your mountain getaway.</p>
+            <a href="build-holiday-home-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-location-hill.jpg" alt="Charekh Valley Investment Potential" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 12 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="charekh-valley-investment.html">Investment Potential &amp; ROI Analysis | Charekh Valley</a></h3>
+            <p class="blog-excerpt">Analyze high capital appreciation, recurring resort rental yields, and ROI benchmarks for Charekh Valley plots.</p>
+            <a href="charekh-valley-investment.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-price-list.jpeg" alt="Charekh Valley Price List" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 7 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="charekh-valley-price-list.html">Charekh Valley Price List &amp; Payment Plan Guide</a></h3>
+            <p class="blog-excerpt">Explore plot dimensions, transparent pricing breakdowns, and flexible payment options for available resort plots.</p>
+            <a href="charekh-valley-price-list.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-plots-new.jpeg" alt="Charekh Valley Uttarakhand Project Overview" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 11 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="charekh-valley-uttarakhand.html">Charekh Valley Uttarakhand: Project Overview, Location &amp; Guide</a></h3>
+            <p class="blog-excerpt">Your master reference guide covering plot locations, resort amenities, infrastructure, and FAQs.</p>
+            <a href="charekh-valley-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 7 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-hill-road.png" alt="Charekh Valley vs Other Hill Plots" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="charekh-valley-vs-other-hill-plots.html">Charekh Valley vs. Other Hill Plots: What Sets Us Apart</a></h3>
+            <p class="blog-excerpt">Compare isolated land parcels with Charekh Valley's fully integrated operational resort community framework.</p>
+            <a href="charekh-valley-vs-other-hill-plots.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 8 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-03.jpg" alt="Cottage or Villa on Hill Plot" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="cottage-or-villa-on-hill-plot.html">Cottage vs. Villa: What to Build on Your Mountain Plot</a></h3>
+            <p class="blog-excerpt">Weighing the pros, costs, and architectural aesthetics of cozy mountain cottages versus luxury hillside villas.</p>
+            <a href="cottage-or-villa-on-hill-plot.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 9 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-01.jpg" alt="Eco-Friendly Home on Forest Plot" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 10 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="eco-friendly-home-forest-plot.html">Building an Eco-Friendly Mountain Home on a Forest Plot</a></h3>
+            <p class="blog-excerpt">Sustainable building practices, solar energy integration, and rainwater harvesting for green hill living.</p>
+            <a href="eco-friendly-home-forest-plot.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 10 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-valley-view.jpg" alt="Hill Land vs City Flat" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="hill-land-vs-city-flat.html">Hill Land vs. City Flat: The Ultimate Lifestyle Switch</a></h3>
+            <p class="blog-excerpt">Why urban professionals are shifting capital from crowded city apartments to tangible, high-growth hill land.</p>
+            <a href="hill-land-vs-city-flat.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 11 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-plots-layout.jpeg" alt="Hill Plot Buying Checklist" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="hill-plot-buying-checklist.html">The Essential Hill Plot Buying Checklist</a></h3>
+            <p class="blog-excerpt">Key legal verifications, title clearances, access checks, and utility validations before buying mountain property.</p>
+            <a href="hill-plot-buying-checklist.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 12 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-location.jpg" alt="Himalayan Land Investment Guide" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 11 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="himalayan-land-investment-guide.html">Himalayan Land Investment Guide: Securing Your Future</a></h3>
+            <p class="blog-excerpt">Expert insights into navigating Himalayan real estate regulations, micro-markets, and long-term security.</p>
+            <a href="himalayan-land-investment-guide.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 13 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-full.png" alt="Katyuri Resort Plots" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="katyuri-resort-plots.html">Owning Plots Inside Katyuri Resort: The Ultimate Privilege</a></h3>
+            <p class="blog-excerpt">Explore the exclusive integration of residential plots directly adjacent to an operating five-star hospitality resort.</p>
+            <a href="katyuri-resort-plots.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 14 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-valley-hill-picture-01.jpg" alt="Lease Plot to Resort" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="lease-plot-to-resort.html">How Resort Lease-Back Programs Generate Passive Income</a></h3>
+            <p class="blog-excerpt">Understanding how your holiday chalet can earn rental revenue through professional resort management.</p>
+            <a href="lease-plot-to-resort.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 15 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-valley-hill-picture-02.jpg" alt="Mountain Home Design Ideas" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 10 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="mountain-home-design-ideas.html">Inspirational Mountain Home Design &amp; Architecture Ideas</a></h3>
+            <p class="blog-excerpt">Sloped roofs, expansive wooden decks, large glass viewing galleries, and modern alpine architectural trends.</p>
+            <a href="mountain-home-design-ideas.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 16 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-02.jpg" alt="Plots in Charekh Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="plots-in-charekh-uttarakhand.html">Plots in Charekh, Uttarakhand: Complete Buyer's Guide</a></h3>
+            <p class="blog-excerpt">Everything you need to know about purchasing secure, freehold plots in the pristine hills of Charekh.</p>
+            <a href="plots-in-charekh-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 17 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-valley-hill-picture-03.jpg" alt="Plots in Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="plots-in-uttarakhand.html">Investing in Plots in Uttarakhand: Market Trends &amp; Tips</a></h3>
+            <p class="blog-excerpt">An overview of Uttarakhand's real estate growth corridors, connectivity upgrades, and land opportunities.</p>
+            <a href="plots-in-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 18 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/gallery/charekh-valley-hill-picture-04.jpg" alt="Plots Near Resort Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 8 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="plots-near-resort-uttarakhand.html">Why Buying Plots Near Resorts in Uttarakhand is a Smart Move</a></h3>
+            <p class="blog-excerpt">The unbeatable convenience and hospitality privileges of owning property adjacent to operational luxury resorts.</p>
+            <a href="plots-near-resort-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 19 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-all-full.png" alt="Residential Plots in Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 9 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="residential-plots-in-uttarakhand.html">Residential Plots in Uttarakhand: Freehold vs. Leasehold</a></h3>
+            <p class="blog-excerpt">Understanding land titles, ownership security, and registry laws when buying residential plots in the hills.</p>
+            <a href="residential-plots-in-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 20 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <div class="overflow-hidden">
+            <img src="../assets/images/charekh-valley-nature-03.jpg" alt="Second Home in Uttarakhand" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta"><span><i class="fa-solid fa-calendar-days text-warning me-1"></i> Oct 2026</span><span><i class="fa-solid fa-clock text-warning me-1"></i> 10 min read</span></div>
+            <h3 class="blog-title serif-font"><a href="second-home-in-uttarakhand.html">Owning a Second Home in Uttarakhand: The Ultimate Escape</a></h3>
+            <p class="blog-excerpt">Why urban families are embracing the mountain lifestyle for wellness, peace, and generational legacy.</p>
+            <a href="second-home-in-uttarakhand.html" class="read-more-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (PRESERVED FROM TEMPLATE) ===== -->
+<footer class="main-footer footer-v3 bg-dark text-white pt-5 pb-3 border-top border-secondary border-opacity-25">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-widget">
+          <div class="footer-logo mb-3"><img src="../assets/images/charekh-valley-logo.jpeg" alt="Charekh Valley" style="max-width:150px; border-radius: 4px;"></div>
+          <div class="widget-content"><p class="text-white-50 small">Premium plotted project inside Katyuri Resort, Uttarakhand.</p></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-widget">
+          <h4 class="widget-title text-white h5 serif-font">Quick Links</h4>
+          <div class="line-wrap mb-3"><span></span><span></span><span></span></div>
+          <div class="widget-content">
+            <ul class="widget-nav list-unstyled">
+              <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="../overview.html" class="text-white-50 text-decoration-none">Overview</a></li>
+              <li class="mb-2"><a href="../master-plan.html" class="text-white-50 text-decoration-none">Master Plan</a></li>
+              <li class="mb-2"><a href="../amenities.html" class="text-white-50 text-decoration-none">Amenities</a></li>
+              <li class="mb-2"><a href="../gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+              <li><a href="../contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-widget">
+          <h4 class="widget-title text-white h5 serif-font">Contact</h4>
+          <div class="line-wrap mb-3"><span></span><span></span><span></span></div>
+          <div class="widget-content">
+            <ul class="widget-nav list-unstyled text-white-50">
+              <li class="mb-2"><i class="fa-solid fa-phone me-2 text-warning"></i> <a data-site="phone-link" href="#" class="text-white-50 text-decoration-none">phone</a></li>
+              <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-warning"></i> <a data-site="email-link" href="#" class="text-white-50 text-decoration-none">email</a></li>
+              <li><i class="fa-solid fa-location-dot me-2 text-warning"></i> <span data-site="address">Near Katyuri Resort, Uttarakhand</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <div class="copyright-area text-center text-white-50 small">
+      <p>&copy; 2026 Charekh Valley. Images and plans are indicative. 
+        <a href="index.html" class="text-white-50 text-decoration-none">Blog</a> | 
+        <a href="../privacy-policy/" class="text-white-50 text-decoration-none">Privacy Policy</a> | 
+        <a href="../terms-and-conditions/" class="text-white-50 text-decoration-none">Terms and Conditions</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site-config.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
