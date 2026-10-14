@@ -47,7 +47,10 @@
   /* Hero Architecture */
   .hero-container-wrapper {
     position: relative;
-    padding: 130px 0 100px 0;
+    padding: 140px 0 80px 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
     background: radial-gradient(circle at top right, #1b3827, #0f1c14 60%, #08120e 100%);
     overflow: hidden;
   }
@@ -88,10 +91,28 @@
   }
   .hero-video-box video {
     width: 100%;
-    height: 100%;
-    max-height: 480px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     object-fit: cover;
     display: block;
+  }
+
+  /* Hero: keep the content full width inside the flex box */
+  .hero-container-wrapper .container {
+    width: 100%;
+  }
+
+  /* Hero: heading breaks into two even lines */
+  .hero-container-wrapper h1 {
+    text-wrap: balance;
+  }
+
+  /* Hero: phones and tablets */
+  @media (max-width: 991px) {
+    .hero-container-wrapper {
+      min-height: auto;
+      padding: 110px 0 60px 0;
+    }
   }
 
   .badge-nature {
@@ -242,7 +263,7 @@
       <div class="col-lg-6">
         <div class="hero-video-box">
           <video autoplay muted loop playsinline poster="assets/images/charekh-valley-full.png">
-            <source src="assets/videos/charekh-valley-video.mp4" type="video/mp4">
+            <source src="assets/videos/charekh-valley-real.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -269,7 +290,7 @@
       </div>
       <div class="col-lg-6">
         <div class="plan-box overflow-hidden rounded-4 shadow-lg border border-warning border-opacity-25">
-          <img src="assets/images/charekh-valley-plots-new.jpeg" alt="Charekh Valley plots layout" class="w-100 hover-zoom" style="transition: transform 0.5s ease;">
+          <img src="assets/images/charekh-valley-map-01.jpeg" alt="Charekh Valley plots layout" class="w-100 hover-zoom" style="transition: transform 0.5s ease;">
         </div>
       </div>
     </div>
@@ -434,7 +455,7 @@
         <div class="renvia-project-item style-four gallery-item overflow-hidden rounded-4 shadow-sm bg-white">
           <div class="project-thumbnail position-relative">
             <span class="location position-absolute top-0 start-0 m-2 badge bg-dark opacity-75 z-2"><i class="fa-solid fa-location-dot"></i> Plot Layout</span>
-            <img src="assets/images/charekh-valley-plots-new.jpeg" alt="Plot Layout" class="w-100" style="height: 230px; object-fit: cover;">
+            <img src="assets/images/charekh-valley-map-01.jpeg" alt="Plot Layout" class="w-100" style="height: 230px; object-fit: cover;">
             <div class="hover-content p-3 text-center"><a class="icon-btn btn btn-sm btn-light rounded-circle shadow" href="gallery.html"><i class="fa-solid fa-arrow-right"></i></a></div>
           </div>
         </div>
@@ -630,7 +651,10 @@
   /* Hero Architecture */
   .hero-container-wrapper {
     position: relative;
-    padding: 130px 0 100px 0;
+    padding: 140px 0 80px 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
     background: radial-gradient(circle at top right, #1b3827, #0f1c14 60%, #08120e 100%);
     overflow: hidden;
   }
@@ -671,10 +695,28 @@
   }
   .hero-video-box video {
     width: 100%;
-    height: 100%;
-    max-height: 480px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     object-fit: cover;
     display: block;
+  }
+
+  /* Hero: keep the content full width inside the flex box */
+  .hero-container-wrapper .container {
+    width: 100%;
+  }
+
+  /* Hero: heading breaks into two even lines */
+  .hero-container-wrapper h1 {
+    text-wrap: balance;
+  }
+
+  /* Hero: phones and tablets */
+  @media (max-width: 991px) {
+    .hero-container-wrapper {
+      min-height: auto;
+      padding: 110px 0 60px 0;
+    }
   }
 
   .badge-nature {
@@ -948,7 +990,7 @@
       <div class="col-lg-6">
         <div class="hero-video-box">
           <video autoplay muted loop playsinline poster="assets/images/charekh-valley-full.png">
-            <source src="assets/videos/charekh-valley-video.mp4" type="video/mp4">
+            <source src="assets/videos/charekh-valley-real.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -975,7 +1017,7 @@
       </div>
       <div class="col-lg-6">
         <div class="plan-box overflow-hidden rounded-4 shadow-lg border border-warning border-opacity-25">
-          <img src="assets/images/charekh-valley-plots-new.jpeg" alt="Charekh Valley plots layout" class="w-100 hover-zoom" style="transition: transform 0.5s ease;">
+          <img src="assets/images/charekh-valley-map-01.jpeg" alt="Charekh Valley plots layout" class="w-100 hover-zoom" style="transition: transform 0.5s ease;">
         </div>
       </div>
     </div>
@@ -1140,7 +1182,7 @@
         <div class="renvia-project-item style-four gallery-item overflow-hidden rounded-4 shadow-sm bg-white">
           <div class="project-thumbnail position-relative">
             <span class="location position-absolute top-0 start-0 m-2 badge bg-dark opacity-75 z-2"><i class="fa-solid fa-location-dot"></i> Plot Layout</span>
-            <img src="assets/images/charekh-valley-plots-new.jpeg" alt="Plot Layout" class="w-100" style="height: 230px; object-fit: cover;">
+            <img src="assets/images/charekh-valley-map-01.jpeg" alt="Plot Layout" class="w-100" style="height: 230px; object-fit: cover;">
             <div class="hover-content p-3 text-center"><a class="icon-btn btn btn-sm btn-light rounded-circle shadow" href="gallery.html"><i class="fa-solid fa-arrow-right"></i></a></div>
           </div>
         </div>
